@@ -1,0 +1,6 @@
+const numberButtons = document.querySelectorAll('[data-number]')
+const operatorButtons = document.querySelectorAll('[data-operator]')
+const deletAllButtons = document.querySelector('[data-deletAll]')
+const deletButtons = document.querySelector('[data-delet]')
+const opatorButtonsOutput = document.querySelectorAll('[data-previousOperand]')
+const currentOperandOutput = document.querySelectorAll('[current_operand]')
