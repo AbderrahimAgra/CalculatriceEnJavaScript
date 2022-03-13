@@ -5,10 +5,14 @@ const deletButtons = document.querySelector('[data-delet]')
 const opatorButtonsOutput = document.querySelectorAll('[data-previousOperand]')
 const currentOperandOutput = document.querySelectorAll('[current_operand]')*/
 const output = document.getElementsByClassName("current_operand")[0];
+// const output = document.querySelector(".current_operand");
 
 const btns = document.getElementsByTagName("button");
-
+let number1 ;
+let number2 ;
+let operation ;
 for(let i=0 ; i<btns.length ; i++){
+
  btns[i].addEventListener("click",function(e){
    let btnText=e.target.innerText;
    switch(btnText){
@@ -28,14 +32,8 @@ for(let i=0 ; i<btns.length ; i++){
      break;
      case "DEL" : 
      break;
-
      default: 
      output.innerText+=btnText;
    };
  });
-
 }
-
-// number1.addEventListener("click",function(e){
-//   output.innerText += e.target.innerText ;
-// })
